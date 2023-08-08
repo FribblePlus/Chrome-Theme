@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.facebook.com/"  class="div1 pin"><img src="img/icons/facebook.svg" alt=""></a>
+        <div class="div2 pin"><img style="width: 100%; height: 100%; overflow: hidden; border-radius: 20px;" src="https://source.unsplash.com/random/152x320/?street" alt=""></div>
+        <div class="div25 pin">
+            <iframe src="https://free.timeanddate.com/clock/i8z00cmu/n3632/fn11/fs20/fcfff/tct/pct/tt1/tw1" frameborder="0" width="204" height="26" allowtransparency="true"></iframe>
+        </div>
+        <div class="div4 pin">
+            <iframe src="https://free.timeanddate.com/clock/i8z00cmu/n3632/szw210/szh210/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql15/mqw4/mqd94/mhcfff/mhl15/mhw4/mhd94/mmcfff/hhcbbb/hmcddd/hsv0" frameborder="0" width="210" height="210"></iframe>
+        </div>
+        <a href="https://www.tiktok.com/" class="div5 pin"><img src="img/icons/tik_tok.svg" alt=""></a>
+        <div class="div6 pin"><video width="100%" height="100%" style="overflow: hidden;" src="img/astro.mp4" muted autoplay loop playsinline></video></div>
+        <a href="https://www.figma.com/" class="div8 pin"><img src="img/icons/Figma.svg" alt=""></a>
+        <a href="https://open.spotify.com/" class="div9 pin"><img src="img/icons/spotify.svg" alt=""></a>
+        <a href="https://www.snapchat.com/" class="div10 pin"><img src="img/icons/Snapchat.svg" alt=""></a>
+        <a href="https://twitter.com/" class="div11 pin"><img src="img/icons/twitter.svg" alt=""></a>
+        <a href="https://www.youtube.com/" class="div12 pin"><img src="img/icons/youtube.svg" alt=""></a>
+        <a href="https://www.twitch.tv/" class="div14 pin"><img src="img/icons/twitch.svg" alt=""></a>
+        <a href="https://discord.com/" class="div15 pin"><img src="img/icons/discord.svg" alt=""></a>
+        <a href="https://www.linkedin.com/" class="div16 pin"><img src="img/icons/linkedin.svg" alt=""></a>
+        <div class="div17 ">
+            <div class="search">
+                <h1>GOOGLE</h1>
+                <input class="query" name="" type="text" value="">
+                <button     class="searchBtn">SEARCH</button>
+            </div>
+        </div>
+        <a href="https://www.whatsapp.com/" class="div18 pin"><img src="img/icons/whatsapp.svg" alt=""></a>
+        <div class="div19 pin"><img style="width: 100%; height: 100%; overflow: hidden; border-radius: 20px;" src="https://source.unsplash.com/random/152x320/?dark" alt=""></div>
+        <div class="div20 pin"><img style="width: 95%; height: 95%; overflow: hidden; border-radius: 20px;" src="https://source.unsplash.com/random/320x320/?nature" alt=""></div>
+        <a href="https://www.pinterest.com/" class="div21 pin"><img src="img/icons/pinterest.svg" alt=""></a>
+        <a href="https://dribbble.com/" class="div22 pin"><img src="img/icons/dribbble.svg" alt=""></a>
+        <div class="div23"><iframe style="border-radius: 20px;" width="100%" height="100%"
+            src="https://embed.windy.com">
+        </iframe></div>
+        <a href="https://www.skype.com/" class="div24 pin"><img src="img/icons/skype.svg" alt=""></a>
+        <div class="div3 pin">
+            <iframe src="https://free.timeanddate.com/clock/i8z0156a/n3632/fn11/fs48/fcfff/tct/pct/ftb/th1" frameborder="0" width="176" height="61" allowtransparency="true"></iframe>
+        </div>
+        <div class="div26 pin"><img style="width: 95%; height: 95%; overflow: hidden; border-radius: 20px;" src="https://source.unsplash.com/random/320x320/?programming" alt=""></div>
+        <a href="https://telegram.org/" class="div27 pin"><img src="img/icons/telegram.svg" alt=""></a>
+        <a href="https://www.reddit.com/" class="div28 pin"><img src="img/icons/Reddit.svg" alt=""></a>
+
+
+    </div>
+    <script>
+        let query = document.querySelector('.query')
+        let searchBtn = document.querySelector('.searchBtn')
+
+        searchBtn.onclick = function(){
+            let url = 'https://www.google.com/search?q='+query.value;
+            window.open(url, '_self');
+        }
+        query.addEventListener('keyup', (e) =>{
+            if(e.keyCode === 13){
+                let url = 'https://www.google.com/search?q='+query.value;
+                window.open(url, '_self');
+            }
+        }
+        )
+        window.addEventListener('load', async () => {
+        let video = document.querySelector('video[muted][autoplay]');
+        try {
+            await video.play();
+        } catch (err) {
+            video.controls = true;
+        }
+        });
+    </script>
+</body>
+</html>
